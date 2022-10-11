@@ -8,9 +8,11 @@ const ShowQuiz = () => {
     const quizData = useLoaderData();
     const datas = quizData.data.questions;
     const topic = quizData.data.name;
+    const totalQuiz = quizData.data.total;
     return (
         <div className='mt-5'>
-            <h3 className='text-3xl mb-7 font-bold'>Quiz: {topic}</h3>
+            <h3 className='text-3xl mb-1 font-bold'>Quiz of {topic}</h3>
+            <h2 className='text-xl mb-7 font-bold'>Total {topic} quiz: {totalQuiz}</h2>
             <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-3 mb-8" onClick={() => {
                 alert(`your correct answer ${correctNum}`)
             }}>Show Your Correct Answer</button>
