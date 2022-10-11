@@ -23,7 +23,7 @@ const Header = () => {
                 <ul className='flex items-center hidden space-x-8 lg:flex'>
                     <li>
                         <Link
-                            to='/'
+                            to='/home'
                             aria-label='Home'
                             title='Home'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -43,7 +43,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to='/cart'
+                            to='/statistic'
                             aria-label='Cart'
                             title='Cart'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -55,7 +55,7 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
-                            to='/about'
+                            to='/blog'
                             aria-label='About Us'
                             title='About Us'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -130,7 +130,17 @@ const Header = () => {
                                     <ul className='space-y-4'>
                                         <li>
                                             <Link
-                                                to='/shop'
+                                                to='/home'
+                                                aria-label='Shop'
+                                                title='Shop'
+                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                            >
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li>
+                                            <Link
+                                                to='/quiz'
                                                 aria-label='Shop'
                                                 title='Shop'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -140,7 +150,7 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to='/cart'
+                                                to='/statistic'
                                                 aria-label='Cart'
                                                 title='Cart'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -151,7 +161,7 @@ const Header = () => {
                                         </li>
                                         <li>
                                             <Link
-                                                to='/about'
+                                                to='/blog'
                                                 aria-label='About Us'
                                                 title='About Us'
                                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
