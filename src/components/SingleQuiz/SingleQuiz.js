@@ -7,7 +7,8 @@ import { faEye } from '@fortawesome/free-solid-svg-icons'
 
 
 const SingleQuiz = ({ data, index, setCorrectNum, correctNum, setInCorrectNum, inCorrectNum }) => {
-    const { correctAnswer, id, options, question } = data;
+    const { options, question } = data;
+    let {correctAnswer} = data;
     const qs = question.split('<p>')[1];
     const q = qs.split('</p>')[0];
 
@@ -20,7 +21,19 @@ const SingleQuiz = ({ data, index, setCorrectNum, correctNum, setInCorrectNum, i
     const handleClick = (e) => {
         const value = e.target.innerText;
         const element = e.target;
-        if(value === correctAnswer){
+        console.log(correctAnswer)
+
+        if (correctAnswer == "building  User Interface"){
+            correctAnswer = "building User Interface"
+        }
+        if (correctAnswer == "const [name, setName] =  useState(“JingaLala”);"){
+            correctAnswer = "const [name, setName] = useState(“JingaLala”);"
+        }
+        if (correctAnswer == "function  Nayika() { return <h3> Mousumi </h3>   }"){
+            correctAnswer = "function Nayika() { return <h3> Mousumi </h3> }"
+        }
+
+        if(value == correctAnswer){
             setCorrectNum(correctNum + 1)
             toast.success('Correct Answer !', {
                 position: toast.POSITION.TOP_CENTER
