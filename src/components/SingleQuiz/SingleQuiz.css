@@ -1,0 +1,15 @@
+.bg-color {
+    background-color: green;
+    color: red;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 12px;
+}
+
+.bgColor {
+    background-color: red;
+    color: black;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 12px;
+}
