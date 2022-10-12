@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Quiz from '../Quiz/Quiz';
-import banner from "../../assests/banner.jpg"
 
 const Quizs = () => {
     const quiz = useLoaderData();
