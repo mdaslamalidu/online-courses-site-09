@@ -8,10 +8,10 @@ const Statistic = () => {
     const data = datas.data;
     return (
             <div>
-                <h3 className='text-3xl text-red-300'>Total Question of Every Topic</h3>
+                <h3 className='text-3xl text-red-300'>Total Question of Every Topics</h3>
                 <div className='flex justify-center mt-12'>
                 <BarChart
-                    width={300}
+                    width={340}
                     height={300}
                     data={data}
                     margin={{
@@ -31,8 +31,6 @@ const Statistic = () => {
                 </BarChart>
                 </div>
             </div>
-
-
     );
 };
 

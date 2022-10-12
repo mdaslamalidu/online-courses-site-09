@@ -46,19 +46,7 @@ export const Faq = () => {
                 <div class="flex flex-col mb-16 sm:text-center">
                     <a href="/" class="mb-6 sm:mx-auto">
                         <div class="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
-                            <svg
-                                class="w-10 h-10 text-deep-purple-accent-400"
-                                stroke="currentColor"
-                                viewBox="0 0 52 52"
-                            >
-                                <polygon
-                                    strokeWidth="3"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    fill="none"
-                                    points="29 13 14 29 25 29 23 39 38 23 27 23"
-                                />
-                            </svg>
+                            <img src={'download.png'} alt="" />
                         </div>
                     </a>
                     <div class="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
@@ -67,7 +55,7 @@ export const Faq = () => {
                                 <svg
                                     viewBox="0 0 52 24"
                                     fill="currentColor"
-                                    class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                                    class="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-400 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
                                 >
                                     <defs>
                                         <pattern
@@ -86,32 +74,25 @@ export const Faq = () => {
                                         height="24"
                                     />
                                 </svg>
-                                <span class="relative">The</span>
+                                <span class="relative"></span>
                             </span>{' '}
-                            quick, brown fox jumps over a lazy dog
+                           Some Important questions that you have to know!!!
                         </h2>
-                        <p class="text-base text-gray-700 md:text-lg">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque rem aperiam, eaque ipsa quae.
-                        </p>
+                       
                     </div>
                 </div>
                 <div class="space-y-4">
-                    <Item title="The quick, brown fox jumps over a lazy dog?">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
+                    <Item title="What is the purpose of React Router?">
+                        ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
                     </Item>
-                    <Item title="The first mate and his Skipper too will do?">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
+                    <Item title="How does context api works?">
+                        Context provides a way to pass data through the component tree without having to pass props down manually at every level. <br/>
+                        In a typical React application, data is passed top-down (parent to child) via props, but such usage can be cumbersome for certain types of props (e.g. locale preference, UI theme) that are required by many components within an application. Context provides a way to share values like these between components without having to explicitly pass a prop through every level of the tree.
                     </Item>
-                    <Item title="Is the Space Pope reptilian!?">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
-                    </Item>
-                    <Item title="How much money you got on you?">
-                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque rem aperiam, eaque ipsa quae.
+                    <Item title="What is useRef Hooks in React?">
+                        The useRef hook is the new addition in React 16.8. Before proceeding to this article there is a prerequisite to know about the ref in react.
+                        The useRef is a hook that allows to directly create a reference to the DOM element in the functional component. <br/>
+                        The useRef returns a mutable ref object. This object has a property called .current. The value is persisted in the refContainer.current property. These values are accessed from the current property of the returned object. The .current property could be initialised to the passed argument initialValue e.g. useRef(initialValue). The object can persist a value for a full lifetime of the component. 
                     </Item>
                 </div>
             </div>
