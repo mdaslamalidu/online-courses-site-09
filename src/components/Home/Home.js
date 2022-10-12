@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import banner from "../../assests/banner.jpg"
 import Quiz from '../Quiz/Quiz';
