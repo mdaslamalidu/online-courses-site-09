@@ -10,13 +10,12 @@ const Quiz = ({data}) => {
                 alt=''
             />
             <p className='mb-2 text-xl font-bold leading-none sm:text-2xl'>{data.name}</p>
-            <button
-                className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
-            >
-                <Link to={`/quiz/${data.id}`}>
-                    Start Practice
-                </Link>
-            </button>
+            <Link to={`/quiz/${data.id}`}>
+                <button
+                    className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
+                > Start Practice
+                </button>
+            </Link>
         </div>
     );
 };

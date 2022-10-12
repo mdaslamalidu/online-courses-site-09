@@ -15,8 +15,8 @@ const Home = () => {
                         <span className="dark:text-violet-400"> Categories</span>
                     </h1>
                 </div>
-                <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                    <img src={banner} alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
+                <div className="flex items-center justify-center w-full p-6 mt-8 mb-9 lg:mt-0 h-10 lg:h-96 xl:h-112 2xl:h-128">
+                    <img src={banner} alt="" className="object-contain h-40 lg:h-96 xl:h-112 2xl:h-128" />
                 </div>
             </div>
 
